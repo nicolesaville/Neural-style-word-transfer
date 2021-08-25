@@ -5,8 +5,8 @@ Transfer style from text descriptions to content photos
 
 
 <p align = 'center'>
-<img src = 'Examples/Content/fruit.jpg' height = '246px'>
-<img src = 'Examples/Results/Single-style/fruit-sketch.jpg' height = '246px'>
+<img src = 'Single-style/Examples/Content/fruit.jpg' height = '246px'>
+<img src = 'Single-style/Examples/Results/fruit-sketch.jpg' height = '246px'>
 </p>
 <p align = 'center'>
 </p>
@@ -27,16 +27,16 @@ Manjunath Kudlur*.
 Below are various transforms of a photo of Cornell from our single-style model.
 
 <div align='center'>
-<img src = 'Examples/Content/cornell.jpg' height="200px">
+<img src = 'Single-style/Examples/Content/cornell.jpg' height="200px">
 </div>
      
 <div align = 'center'>
-<img src = 'Examples/Results/Single-style/cornell.jpg' height = '200px'>
-<img src = 'Examples/Results/Single-style/cornell.jpg' height = '200px'>
+<img src = 'Single-style/Examples/Results/cornell-brightMonet.jpg' height = '200px'>
+<img src = 'Single-style/Examples/Results/cornell-sketch.jpg' height = '200px'>
 
 <br>
-<img src = 'Examples/Results/Single-style/cornell.jpg' height = '200px'>
-<img src = 'Examples/Results/Single-style/cornell.jpg' height = '200px'>
+<img src = 'Single-style/Examples/Results/cornell-dullMonet.jpg' height = '200px'>
+<img src = 'Single-style/Examples/Results/cornell.jpg' height = '200px'>
 
 </div>
 
