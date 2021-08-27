@@ -24,31 +24,39 @@ Below are various transforms of a photo of fruit from our multi-style model.
 
 
 
-### Stylizing an Image
+## Stylizing an Image
 To stylize an image, download one of our pre-trained models and use `evaluate.py` as detailed below.
 * link to pre-trained model download
 
 
-### Training a Single-Style Transfer Network
+## Training a Single-Style Transfer Network
+Before training can begin, style data must first be extracted from example style images using `extract_style.py`. All example style images must be saved in per-style directories within the style_files folder.
+
+    python extract_style.py --style_files=path/to/style/img/dirs \
+      --output_file=path/to/save/dir
+
 Use `train.py` to train a new single-style transfer network. Run `python train.py` to view all the possible parameters. 
 Example usage:
 
-    python train.py --style-dir path/to/style/dir \
-      --checkpoint-dir checkpoint/path \
-      --test-img path/to/test/img.jpg \
-      --test-dir path/to/test/dir \
-      --content-weight 1.5e1 \
-      --checkpoint-iterations 200 \
-      --batch-size 4
+    python train.py \
+      --train_dir=path/to/saved/model/dir \
+      --style_dataset_file=file/containing/style/Grams \
+      --num_styles=no_styles \
+      --vgg_checkpoint=path/to/checkpoint \
+      --image_dir=content/image/dir
 
 
-### Evaluating a Single-Style Transfer Network
+
+## Evaluating a Single-Style Transfer Network
 Use `evaluate.py` to evaluate a single-style transfer network. Run `python evaluate.py` to view all the possible parameters. 
 Example usage:
 
-    python evaluate.py --checkpoint path/to/style/model.ckpt \
-      --in-path dir/of/test/imgs/ \
-      --out-path dir/for/results/
+    python evaluate.py --style_dir=path/to/style/name/dict  
+    --checkpoint=path/to/checkpoint  
+    --input_image=path/to/input/img  
+    --which_styles="['list of style names']"   
+    --output_dir=dir/to/save/output 
+    --output_basename="stylised"
 
 
 

@@ -24,15 +24,13 @@ Below are various transforms of a photo of fruit from our single-style model.
 
 ## Stylizing an Image
 To stylize an image, download one of our pre-trained models and use `evaluate.py` as detailed below.
-* link to pre-trained model download
-
+* Van Gogh - https://drive.google.com/file/d/1b97VrRVC_G6P8migaaB_vveyqW1bV6ne/view?usp=sharing
+* Sketch - https://drive.google.com/file/d/1prdzaQJDqYS62DT3gbuw0jVOYfvy-msZ/view?usp=sharing
 
 ## Training a Single-Style Transfer Network
-Before training can begin, style targets must first be extracted from a set of style images using `extractstyle.py`.
+Before training can begin, style targets must first be extracted from a set of style images using `extractstyle.py` and a pre-trained VGG-19 model will need to be downloaded.
 
-
-
-Use `train.py` to train a new single-style transfer network. Run `python train.py` to view all the possible parameters. 
+Once style targets have been generated, use `train.py` to train a new single-style transfer network. Run `python train.py` to view all the possible parameters. 
 Example usage:
 
     python train.py --style-dir path/to/style/dir \
