@@ -26,13 +26,13 @@ Below are various transforms of a photo of Cornell from our single-style model.
 
 
 <div align = 'center'>
-<img src = 'Examples/Results/cornell-sketch.jpg' height = '200px'>
-<img src = 'Examples/Results/cornell.jpg' height = '200px'>
+<img src = 'Single-style/Examples/Results/cornell-sketch.jpg' height = '200px'>
+<img src = 'Single-style/Examples/Results/cornell.jpg' height = '200px'>
 
 <br>
 
-<img src = 'Examples/Results/cornell-brightMonet.jpg' height = '200px'>
-<img src = 'Examples/Results/cornell-dullMonet.jpg' height = '200px'>
+<img src = 'Single-style/Examples/Results/cornell-brightMonet.jpg' height = '200px'>
+<img src = 'Single-style/Examples/Results/cornell-dullMonet.jpg' height = '200px'>
 
 </div>
 

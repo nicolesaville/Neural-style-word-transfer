@@ -9,16 +9,16 @@ Below are various transforms of a photo of fruit from our multi-style model.
 
      
 <div align='center'>
-<img src = 'Single-style/Examples/Content/fruit.jpg' height="200px">
+<img src = 'Examples/Content/fruit.jpg' height="200px">
 </div>
      
 <div align = 'center'>
-<img src = 'Multi-style/Examples/Results/fruit-brightMonet.jpg' height = '200px'>
-<img src = 'Multi-style/Examples/Results/cornell-ukiyo.jpg' height = '200px'>
+<img src = 'Examples/Results/fruit-brightMonet.jpg' height = '200px'>
+<img src = 'Examples/Results/cornell-ukiyo.jpg' height = '200px'>
 
 <br>
-<img src = 'Multi-style/Examples/Results/fruit-vanGogh.jpg' height = '200px'>
-<img src = 'Multi-style/Examples/Results/fruit-dullMonet.jpg' height = '200px'>
+<img src = 'Examples/Results/fruit-vanGogh.jpg' height = '200px'>
+<img src = 'Examples/Results/fruit-dullMonet.jpg' height = '200px'>
 
 </div>
 
@@ -26,7 +26,7 @@ Below are various transforms of a photo of fruit from our multi-style model.
 
 ## Stylizing an Image
 To stylize an image, download one of our pre-trained models and use `evaluate.py` as detailed below.
-* link to pre-trained model download
+* Monet - [download](https://drive.google.com/file/d/1kClOmTppb7SPR2Z9pwUkgAM2ogOUIiZI/view?usp=sharing)
 
 
 ## Training a Single-Style Transfer Network

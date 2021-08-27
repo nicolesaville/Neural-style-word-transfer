@@ -9,23 +9,23 @@ Below are various transforms of a photo of fruit from our single-style model.
 
      
 <div align='center'>
-<img src = 'Single-style/Examples/Content/fruit.jpg' height="200px">
+<img src = 'Examples/Content/fruit.jpg' height="200px">
 </div>
      
 <div align = 'center'>
-<img src = 'Single-style/Examples/Results/fruit-brightMonet.jpg' height = '200px'>
-<img src = 'Single-style/Examples/Results/cornell-sketch.jpg' height = '200px'>
+<img src = 'Examples/Results/fruit-brightMonet.jpg' height = '200px'>
+<img src = 'Examples/Results/cornell-sketch.jpg' height = '200px'>
 
 <br>
-<img src = 'Single-style/Examples/Results/fruit-vanGogh.jpg' height = '200px'>
-<img src = 'Single-style/Examples/Results/fruit-dullMonet.jpg' height = '200px'>
+<img src = 'Examples/Results/fruit-vanGogh.jpg' height = '200px'>
+<img src = 'Examples/Results/fruit-dullMonet.jpg' height = '200px'>
 
 </div>
 
 ## Stylizing an Image
 To stylize an image, download one of our pre-trained models and use `evaluate.py` as detailed below.
-* Van Gogh - https://drive.google.com/file/d/1b97VrRVC_G6P8migaaB_vveyqW1bV6ne/view?usp=sharing
-* Sketch - https://drive.google.com/file/d/1prdzaQJDqYS62DT3gbuw0jVOYfvy-msZ/view?usp=sharing
+* Van Gogh - [download](https://drive.google.com/file/d/1b97VrRVC_G6P8migaaB_vveyqW1bV6ne/view?usp=sharing)
+* Sketch - [download](https://drive.google.com/file/d/1prdzaQJDqYS62DT3gbuw0jVOYfvy-msZ/view?usp=sharing)
 
 ## Training a Single-Style Transfer Network
 Before training can begin, style targets must first be extracted from a set of style images using `extractstyle.py` and a pre-trained VGG-19 model will need to be downloaded.
