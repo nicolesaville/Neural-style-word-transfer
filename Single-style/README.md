@@ -14,7 +14,7 @@ Below are various transforms of a photo of fruit from our single-style model.
      
 <div align = 'center'>
 <img src = 'Examples/Results/fruit-brightMonet.jpg' height = '200px'>
-<img src = 'Examples/Results/cornell-sketch.jpg' height = '200px'>
+<img src = 'Examples/Results/fruit-sketch.jpg' height = '200px'>
 
 <br>
 <img src = 'Examples/Results/fruit-vanGogh.jpg' height = '200px'>
