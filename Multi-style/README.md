@@ -13,12 +13,12 @@ Below are various transforms of a photo of fruit from our multi-style model.
 </div>
      
 <div align = 'center'>
-<img src = 'Examples/Results/fruit-brightMonet.jpg' height = '200px'>
-<img src = 'Examples/Results/cornell-ukiyo.jpg' height = '200px'>
+<img src = 'Examples/Results/fruit-brightMonet.png' height = '200px'>
+<img src = 'Examples/Results/fruit-ukiyo.png' height = '200px'>
 
 <br>
-<img src = 'Examples/Results/fruit-vanGogh.jpg' height = '200px'>
-<img src = 'Examples/Results/fruit-dullMonet.jpg' height = '200px'>
+<img src = 'Examples/Results/fruit-vanGogh.png' height = '200px'>
+<img src = 'Examples/Results/fruit-dullMonet.png' height = '200px'>
 
 </div>
 
