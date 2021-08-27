@@ -24,17 +24,15 @@ Our multi-style model is a modified version of Google Brain Team's [implementati
 ## Single-style Transfer Network
 Below are various transforms of a photo of Cornell from our single-style model.
 
-<div align='center'>
-<img src = 'Single-style/Examples/Content/cornell.jpg' height="200px">
-</div>
-     
+
 <div align = 'center'>
-<img src = 'Single-style/Examples/Results/cornell-brightMonet.jpg' height = '200px'>
-<img src = 'Single-style/Examples/Results/cornell-sketch.jpg' height = '200px'>
+<img src = 'Examples/Results/cornell-sketch.jpg' height = '200px'>
+<img src = 'Examples/Results/cornell.jpg' height = '200px'>
 
 <br>
-<img src = 'Single-style/Examples/Results/cornell-dullMonet.jpg' height = '200px'>
-<img src = 'Single-style/Examples/Results/cornell.jpg' height = '200px'>
+
+<img src = 'Examples/Results/cornell-brightMonet.jpg' height = '200px'>
+<img src = 'Examples/Results/cornell-dullMonet.jpg' height = '200px'>
 
 </div>
 
@@ -43,17 +41,14 @@ Below are various transforms of a photo of Cornell from our single-style model.
 ## Multi-style Transfer Network
 Below are various transforms of a photo of Cornell from our multi-style model.
 
-<div align='center'>
-<img src = 'Single-style/Examples/Content/cornell.jpg' height="200px">
-</div>
      
 <div align = 'center'>
-<img src = 'Multi-style/Examples/Results/cornell-brightMonet.jpg' height = '200px'>
+<img src = 'Multi-style/Examples/Results/cornell.jpg' height = '200px'>
 <img src = 'Multi-style/Examples/Results/cornell-brightMonet.jpg' height = '200px'>
 
 <br>
-<img src = 'Multi-style/Examples/Results/cornell-brightMonet.jpg' height = '200px'>
-<img src = 'Multi-style/Examples/Results/cornell-brightMonet.jpg' height = '200px'>
+<img src = 'Multi-style/Examples/Results/cornell-dullMonet.jpg' height = '200px'>
+<img src = 'Multi-style/Examples/Results/cornell-ukiyo.jpg' height = '200px'>
 
 </div>
 

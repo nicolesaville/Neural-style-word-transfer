@@ -5,19 +5,20 @@ Our multi-style model is a modified version of Google Brain Team's [implementati
 
 
 ## Multi-style Transfer Network
-Below are various transforms of a photo of Cornell from our multi-style model.
+Below are various transforms of a photo of fruit from our multi-style model.
 
+     
 <div align='center'>
-<img src = 'Single-style/Examples/Content/cornell.jpg' height="200px">
+<img src = 'Single-style/Examples/Content/fruit.jpg' height="200px">
 </div>
      
 <div align = 'center'>
-<img src = 'Multi-style/Examples/Results/cornell-brightMonet.jpg' height = '200px'>
-<img src = 'Multi-style/Examples/Results/cornell-brightMonet.jpg' height = '200px'>
+<img src = 'Multi-style/Examples/Results/fruit-brightMonet.jpg' height = '200px'>
+<img src = 'Multi-style/Examples/Results/cornell-ukiyo.jpg' height = '200px'>
 
 <br>
-<img src = 'Multi-style/Examples/Results/cornell-brightMonet.jpg' height = '200px'>
-<img src = 'Multi-style/Examples/Results/cornell-brightMonet.jpg' height = '200px'>
+<img src = 'Multi-style/Examples/Results/fruit-vanGogh.jpg' height = '200px'>
+<img src = 'Multi-style/Examples/Results/fruit-dullMonet.jpg' height = '200px'>
 
 </div>
 
