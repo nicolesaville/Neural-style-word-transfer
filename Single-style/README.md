@@ -21,12 +21,16 @@ Below are various transforms of a photo of Cornell from our single-style model.
 
 </div>
 
-### Stylizing an Image
+## Stylizing an Image
 To stylize an image, download one of our pre-trained models and use `evaluate.py` as detailed below.
 * link to pre-trained model download
 
 
-### Training a Single-Style Transfer Network
+## Training a Single-Style Transfer Network
+Before training can begin, style targets must first be extracted from a set of style images using `extractstyle.py`.
+
+
+
 Use `train.py` to train a new single-style transfer network. Run `python train.py` to view all the possible parameters. 
 Example usage:
 
@@ -39,7 +43,7 @@ Example usage:
       --batch-size 4
 
 
-### Evaluating a Single-Style Transfer Network
+## Evaluating a Single-Style Transfer Network
 Use `evaluate.py` to evaluate a single-style transfer network. Run `python evaluate.py` to view all the possible parameters. 
 Example usage:
 
