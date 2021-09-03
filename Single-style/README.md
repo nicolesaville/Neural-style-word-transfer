@@ -43,7 +43,7 @@ Example usage:
 
 
 ## Evaluating a Single-Style Transfer Network
-Use `evaluate.py` to evaluate a single-style transfer network. Run `python evaluate.py` to view all the possible parameters. 
+Use `evaluate.py` to transform images with a pre-trained single-style transfer network. Evaluation may be performed on a single image or a directory of images, to transform several images of different dimensions use `--allow-different-dimensions`. Run `python evaluate.py` to view all the possible parameters. 
 Example usage:
 
     python evaluate.py --checkpoint path/to/style/model.ckpt \
