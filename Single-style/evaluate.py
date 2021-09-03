@@ -47,31 +47,6 @@ def check_opts(opts):
         exists(opts.out_path, 'out dir not found!')
         assert opts.batch_size > 0
 
-def main():
-    parser = build_parser()
-    opts = parser.parse_args()
-    check_opts(opts)
-
-    # Transform single content image
-    if not os.path.isdir(opts.in_path):
-        if os.path.exists(opts.out_path) and os.path.isdir(opts.out_path):
-            out_path = os.path.join(opts.out_path,os.path.basename(opts.in_path))
-        else:
-            out_path = opts.out_path
-        ffwd_to_img(opts.in_path, out_path, opts.checkpoint_dir,device=opts.device)
-    
-    # Transform directory of content images
-    else:
-        files = list_files(opts.in_path)
-        full_in = [os.path.join(opts.in_path,x) for x in files]
-        full_out = [os.path.join(opts.out_path,x) for x in files]
-        if opts.allow_different_dimensions:
-            ffwd_different_dimensions(full_in, full_out, opts.checkpoint_dir, device_t=opts.device, batch_size=opts.batch_size)
-        else :
-            ffwd(full_in, full_out, opts.checkpoint_dir, device_t=opts.device, batch_size=opts.batch_size)
-
-if __name__ == '__main__':
-    main()
 
 # Perform feed-forward transform on images at 'data_in' 
 def ffwd(data_in, paths_out, checkpoint_dir, device_t='/gpu:0', batch_size=4):
@@ -149,3 +124,29 @@ def ffwd_different_dimensions(in_path, out_path, checkpoint_dir,
         print('Processing images of shape %s' % shape)
         ffwd(in_path_of_shape[shape], out_path_of_shape[shape], 
             checkpoint_dir, device_t, batch_size)
+
+def main():
+    parser = build_parser()
+    opts = parser.parse_args()
+    check_opts(opts)
+
+    # Transform single content image
+    if not os.path.isdir(opts.in_path):
+        if os.path.exists(opts.out_path) and os.path.isdir(opts.out_path):
+            out_path = os.path.join(opts.out_path,os.path.basename(opts.in_path))
+        else:
+            out_path = opts.out_path
+        ffwd_to_img(opts.in_path, out_path, opts.checkpoint_dir,device=opts.device)
+    
+    # Transform directory of content images
+    else:
+        files = list_files(opts.in_path)
+        full_in = [os.path.join(opts.in_path,x) for x in files]
+        full_out = [os.path.join(opts.out_path,x) for x in files]
+        if opts.allow_different_dimensions:
+            ffwd_different_dimensions(full_in, full_out, opts.checkpoint_dir, device_t=opts.device, batch_size=opts.batch_size)
+        else :
+            ffwd(full_in, full_out, opts.checkpoint_dir, device_t=opts.device, batch_size=opts.batch_size)
+
+if __name__ == '__main__':
+    main()
